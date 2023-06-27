@@ -6,7 +6,7 @@
  * Return: characters
  */
 
-int letter(va_list c)
+int ch(va_list c)
 {
 	return (_putchar(va_arg(c, int)));
 }

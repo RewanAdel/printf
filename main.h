@@ -24,6 +24,9 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 
 /* print_char.c */
-int letter(va_list c);
+int ch(va_list c);
+
+/*print_string */
+int _strlen(char *s);
 
 #endif /* MAIN_PRINTF_H */
