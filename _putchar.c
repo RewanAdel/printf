@@ -10,6 +10,7 @@
 int _putchar(char c)
 {
 	static int i;
+
 	static har buf[OUTPUT_BUF_SIZE];
 
 	if (c == BUF_FLUSH || i >= OUTPUT_BUF_SIZE)
@@ -21,7 +22,7 @@ int _putchar(char c)
 	{
 		buf[i++] = c;
 	}
-	return(1);
+	return (1);
 }
 /**
  * _puts - print string
@@ -31,9 +32,10 @@ int _putchar(char c)
 int _puts(char *str)
 {
 	char *a = str;
+
 	while (*str)
 	{
 		_putchar(*str++);
 	}
-	return(*str - a);
+	return (*str - a);
 }

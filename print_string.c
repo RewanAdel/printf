@@ -1,18 +1,26 @@
 #include "main.h"
 
 /**
- * _strlen - finds the length of a string
- * @s: string
- * Return: string length
+ * str - prints string
+ * @k: list
+ * Return: char number
  */
-
-int _strlen(char *s)
+int str(va_list k)
 {
-	int l;
+	char *str;
+	int d;
 
-	for (l = 0; s[l] != '\0';)
+	str = va_arg(k, char *);
+
+	if (str == NULL)
 	{
-		l++;
+		str = "(null)";
 	}
-	return (l);
+	d = 0;
+
+	while (str[d] != '\0')
+	{
+		d = d + _putchar(str[d]);
+	}
+	return (d);
 }
